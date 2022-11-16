@@ -1,7 +1,6 @@
 function outest(){
     function outer(){
         function inner() {
-            console.log("HHH",A)
         }
         return inner
     }
@@ -12,3 +11,4 @@ function outest(){
 const A = 10
 
 outest()()();
+

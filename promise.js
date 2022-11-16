@@ -26,3 +26,38 @@ for(var i = 0 ; i<5 ; i++){
 //     }
 //   })();
 
+
+let p = new Promise((resolve,reject) => {
+    reject(Error("Fails!!"))
+})
+
+p
+.then(res => {
+    console.log("response",res)
+}).catch(err => {
+    console.log(err.message);
+})
+
+
+const person = {
+    name: "JC",
+    displayName(){
+        console.log(this.name)
+    }
+}
+
+const jayesh = Object.create(person)
+
+person.displayName()
+jayesh.displayName()
+
+// class a{
+//     static min = []
+//     eat() {a.min.push("food")}
+// }
+
+// let car = new a();
+// a.eat()
+
+// const a = {a:0,a:2}
+// console.log(a.a)
