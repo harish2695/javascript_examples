@@ -9,7 +9,8 @@ const a = () => {
 
 app.get('/', (req, res) => {
   a()
-  return res.send("Hello javascript <h1>hello</h1> <script src='/Users/apple/javascript/demo/recursion.js' type='text/javascript'></script>")
+  // return res.send("Hello javascript <h1>hello</h1> <script src='/Users/apple/javascript/demo/recursion.js' type='text/javascript'></script>")
+  res.attachment('/Users/apple/javascript/demo/recursion.js')
   // return res.sendFile('/Users/apple/javascript/demo/recursion.js')
 
 });

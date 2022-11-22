@@ -1,9 +1,9 @@
 function counter(){
 var count = 0 
-return function incrementCount(){
-    count++;
-    console.log(count)
-}
+    return function incrementCount(){
+        count++;
+        console.log(count)
+    }
 }
 
 var counter1 = counter()
@@ -38,7 +38,7 @@ counter3.decrementCounter()
 
 //relation b/w garbage collection and closure
 function a(){
-    var x= 0;
+    var x= 0; var m=10;
     return function b(){
         console.log(x)
     }
