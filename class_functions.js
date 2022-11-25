@@ -7,11 +7,11 @@ var b = function  (){
     console.log("Assigned to b and called") // Which is called expression
 }
 
-    // ..... The diiference is Hoisting, a() can be accesed before declaring but b() cannot
+    // ======> ..... The diiference is Hoisting, a() can be accesed before declaring but b() cannot
 //###########################
 //Function declaration
 
-/* Function Statement also known as function declaration */
+/* =====> Function Statement also known as function declaration */
 
 //Anonymous function
 
